@@ -1,0 +1,106 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>Calculadora Tabajara</mat-card-title>
+        <mat-card-subtitle>Testando</mat-card-subtitle>
+    </mat-card-header>
+    <div>
+        <mat-form-field  appearance="fill">
+            <input matInput placeholder="Ex. Pizza" [value]=valorTotal>
+        </mat-form-field>        
+    </div>
+    <mat-card-content>
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('7')">
+                    7
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('8')">
+                   8
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('8')">
+                    9
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>          
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('4')" >
+                    4
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('5')">
+                    5
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('6')">
+                    6
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('1')">
+                    1
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('2')">
+                    2
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('3')">
+                    3
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary" >
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <!-- <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button> -->
+    </mat-card-actions>
+</mat-card> 
+  
