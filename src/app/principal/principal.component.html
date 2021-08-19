@@ -1,11 +1,14 @@
 <mat-card class="card">
     <mat-card-header>
         <mat-card-title>Calculadora Tabajara</mat-card-title>
-        <mat-card-subtitle>Testando</mat-card-subtitle>
+        <mat-card-subtitle >Testando</mat-card-subtitle>
     </mat-card-header>
     <div>
         <mat-form-field  appearance="fill">
-            <input matInput placeholder="Ex. Pizza" [value]=valorTotal>
+            <input matInput disabled [value]="valorAnterior">
+        </mat-form-field>    
+        <mat-form-field  appearance="fill">
+            <input matInput disabled [value]="valorAtual">
         </mat-form-field>        
     </div>
     <mat-card-content>
@@ -21,13 +24,13 @@
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" (click)="addOnInput('8')">
+                <button mat-fab color="primary" (click)="addOnInput('9')">
                     9
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('+')">
+                    <mat-icon>add</mat-icon>
                 </button>
             </mat-grid-tile>
         </mat-grid-list>          
@@ -48,8 +51,8 @@
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('-')" >
+                    <mat-icon>remove</mat-icon>
                 </button>
             </mat-grid-tile>
         </mat-grid-list>
@@ -70,30 +73,31 @@
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('/')"  >
+                    <label>÷</label>
                 </button>
             </mat-grid-tile>
         </mat-grid-list>
         <mat-grid-list cols="4" rowHeight="1:1">
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('0')" >
+                    0
+                </button>
+            </mat-grid-tile>
+            
+            <mat-grid-tile>
+                <button mat-fab color="primary" (click)="addOnInput('ac')" >
+                    AC
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('*')" >
+                    x                
                 </button>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-fab color="primary" >
-                    <mat-icon>delete</mat-icon>
-                </button>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <button mat-fab color="primary" >      
-                    <mat-icon>delete</mat-icon>
+                <button mat-fab color="primary" (click)="addOnInput('=')" >
+                    <mat-icon>drag_handle</mat-icon>
                 </button>
             </mat-grid-tile>
         </mat-grid-list>
